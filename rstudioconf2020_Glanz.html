@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>The Five Principles of Data Science Education</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="hglanz@calpoly.edu" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# The Five Principles of Data Science Education
+## Hunter Glanz
+### <a href="mailto:hglanz@calpoly.edu" class="email">hglanz@calpoly.edu</a>
+### <span class="citation">@hglanz</span>
+
+---
+
+
+
+
+
+
+# Five Principles of Data Science Education
+
+* Reproducibility
+
+* Communication
+
+* Version Control
+
+* Practical Application
+
+* Data Ethics
+
+
+---
+
+# Reproducibility
+
+.center[![](https://66.media.tumblr.com/69f675a7fad6d39ab0118f2192065888/tumblr_p3e3u0UFyt1qz8rwfo2_500.gifv)]
+
+* In one sense, you shouldn't have to look for anything: __re-run code as is__
+
+* If changes are needed (e.g. same analysis/pipeline with slight tweaks): __easy plug-and-play__
+
+* See __J.J. Allaire's keynote__ and __Carl Howe's Data Science Education talk__ for all of the ways R/RStudio enable reproducibility!
+
+---
+
+# Communication
+
+
+.center[![](https://media.giphy.com/media/ujUdrdpX7Ok5W/giphy.gif)]
+
+* Data science, statistics, modeling, etc. should __NOT__ be magic!
+
+* __RMarkdown__ and __Shiny__ are only a couple of tools that help bridge the gap between data/computing and storytelling
+
+* Also see __Gordon Shotwell's talk__ on Technical Debt for more on this
+
+---
+
+# Version Control
+
+.center[![](https://media.giphy.com/media/104ueR8J1OPM2s/giphy.gif)]
+
+* This along with __reproducibility__ speak to the need for the data science pipeline to be __resilient__
+
+* Teams of people need to be able to work simultaneously and seamlessly on data science projects
+
+* __Git integration in RStudio__ is phenomenal for facilitating this!
+
+---
+
+# Practical Application
+
+.center[![](https://media.giphy.com/media/XxVmTbSLmAOMU/giphy.gif)]
+
+* Wearing a football helmet in the classroom is only so useful...
+
+* No matter how good your examples are, nothing beats __the real data science project experience__
+
+* Students need to __learn by doing__ with actual __client-based projects__ at some point in their data science education!
+
+* __R projects; templates provided by RStudio and others; and the diverse use of R packages__ provide wonderful tools for general data science work!
+  
+---
+
+# Data Ethics
+
+.center[![](https://media.giphy.com/media/thODK4rctY3fy/giphy.gif)]
+
+* It's been addressed a lot, recently...even in our Google AI keynote, that biases exist and demand attention
+
+* Wikipedia: __"...systemizing, defending, and recommending concepts of right and wrong conduct in relation to data, in particular personal data."__
+
+* By providing a vehicle for a vast majority of the data science workflow, RStudio helps to free up more of our time and energy for ensuring good conduct in relation to data!
+
+---
+
+# Conclusion
+
+* Reproducibility
+
+* Communication
+
+* Version Control
+
+* Practical Application
+
+* Data Ethics
+
+.center[ __Hunter Glanz__]
+.center[hglanz@calpoly.edu]
+.center[@hglanz]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
