@@ -1,0 +1,119 @@
+---
+title: "The Five Principles of Data Science Education"
+subtitle: "Hunter Glanz"
+author: "hglanz@calpoly.edu"
+date: "@hglanz"
+
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(tidyverse)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+solarized_light()
+```
+
+# Five Principles of Data Science Education
+
+* Reproducibility
+
+* Communication
+
+* Version Control
+
+* Practical Application
+
+* Data Ethics
+
+
+---
+
+# Reproducibility
+
+.center[![](https://66.media.tumblr.com/69f675a7fad6d39ab0118f2192065888/tumblr_p3e3u0UFyt1qz8rwfo2_500.gifv)]
+
+* In one sense, you shouldn't have to look for anything: __re-run code as is__
+
+* If changes are needed (e.g. same analysis/pipeline with slight tweaks): __easy plug-and-play__ 
+
+* See __J.J. Allaire's keynote__ and __Carl Howe's Data Science Education talk__ for all of the ways R/RStudio enable reproducibility!
+
+---
+
+# Communication
+
+
+.center[![](https://media.giphy.com/media/ujUdrdpX7Ok5W/giphy.gif)]
+
+* Data science, statistics, modeling, etc. should __NOT__ be magic!
+
+* __RMarkdown__ and __Shiny__ are only a couple of tools that help bridge the gap between data/computing and storytelling
+
+* Also see __Gordon Shotwell's talk__ on Technical Debt for more on this
+
+---
+
+# Version Control
+
+.center[![](https://media.giphy.com/media/104ueR8J1OPM2s/giphy.gif)]
+
+* This along with __reproducibility__ speak to the need for the data science pipeline to be __resilient__
+
+* Teams of people need to be able to work simultaneously and seamlessly on data science projects
+
+* __Git integration in RStudio__ is phenomenal for facilitating this!
+
+---
+
+# Practical Application
+
+.center[![](https://media.giphy.com/media/XxVmTbSLmAOMU/giphy.gif)]
+
+* Wearing a football helmet in the classroom is only so useful...
+
+* No matter how good your examples are, nothing beats __the real data science project experience__
+
+* Students need to __learn by doing__ with actual __client-based projects__ at some point in their data science education!
+
+* __R projects; templates provided by RStudio and others; and the diverse use of R packages__ provide wonderful tools for general data science work!
+  
+---
+
+# Data Ethics
+
+.center[![](https://media.giphy.com/media/thODK4rctY3fy/giphy.gif)]
+
+* It's been addressed a lot, recently...even in our Google AI keynote, that biases exist and demand attention
+
+* Wikipedia: __"...systemizing, defending, and recommending concepts of right and wrong conduct in relation to data, in particular personal data."__
+
+* By providing a vehicle for a vast majority of the data science workflow, RStudio helps to free up more of our time and energy for ensuring good conduct in relation to data!
+
+---
+
+# Conclusion
+
+* Reproducibility
+
+* Communication
+
+* Version Control
+
+* Practical Application
+
+* Data Ethics
+
+.center[ __Hunter Glanz__]
+.center[hglanz@calpoly.edu]
+.center[@hglanz]
